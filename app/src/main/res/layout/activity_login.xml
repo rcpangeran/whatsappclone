@@ -2,59 +2,37 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layoutSignUp_Root"
+    android:id="@+id/lyoLogin_Root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentRight="false"
-        android:layout_alignParentBottom="false"
-        android:layout_centerInParent="false"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:layoutDirection="inherit"
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/edtSignUp_Email"
+        android:id="@+id/edtLogin_Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:layout_centerInParent="false"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Enter your Email Address"
+        android:hint="Enter your Email"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/edtSignUp_Username"
+        android:id="@+id/edtLogin_Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignWithParentIfMissing="true"
-        android:layout_below="@+id/edtSignUp_Email"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentBottom="false"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="Enter your Username"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/edtSignUp_Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edtSignUp_Username"
+        android:layout_below="@+id/edtLogin_Email"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="8dp"
@@ -63,23 +41,23 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btnSignUp_Register"
+        android:id="@+id/btnLogin_Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edtSignUp_Password"
+        android:layout_below="@+id/edtLogin_Password"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="40dp"
         android:background="@color/colorPrimaryDark"
-        android:text="Register"
+        android:text="Log In"
         android:textColor="@color/colorTextWhite" />
 
     <TextView
-        android:id="@+id/txtSignUp_Login"
+        android:id="@+id/txtLogin_Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSignUp_Register"
+        android:layout_below="@+id/btnLogin_Login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Already register? Login Here" />
+        android:text="Doesn't have account? Register Here" />
 </RelativeLayout>
